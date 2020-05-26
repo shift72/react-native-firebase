@@ -15,6 +15,16 @@
 		2748D8172236429D00FC8DC8 /* RNFBSharedUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D8102236417700FC8DC8 /* RNFBSharedUtils.m */; };
 		2748D81C223674CD00FC8DC8 /* RNFBPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D81B223674CD00FC8DC8 /* RNFBPreferences.m */; };
 		2748D8202237018600FC8DC8 /* RNFBMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D81F2237018600FC8DC8 /* RNFBMeta.m */; };
+		4817C023247DB77E00704ED1 /* RNFBSharedUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D8102236417700FC8DC8 /* RNFBSharedUtils.m */; };
+		4817C024247DB77E00704ED1 /* RNFBRCTEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2744B99021F46140004F8E3F /* RNFBRCTEventEmitter.m */; };
+		4817C025247DB77E00704ED1 /* RCTConvert+FIROptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2744B9A321F48A4F004F8E3F /* RCTConvert+FIROptions.m */; };
+		4817C026247DB77E00704ED1 /* RNFBMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D81F2237018600FC8DC8 /* RNFBMeta.m */; };
+		4817C027247DB77E00704ED1 /* RCTConvert+FIRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2744B9A621F57C2F004F8E3F /* RCTConvert+FIRApp.m */; };
+		4817C028247DB77E00704ED1 /* RNFBAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2744B98521F45429004F8E3F /* RNFBAppModule.m */; };
+		4817C029247DB77E00704ED1 /* RNFBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D8142236426300FC8DC8 /* RNFBJSON.m */; };
+		4817C02A247DB77E00704ED1 /* RNFBPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748D81B223674CD00FC8DC8 /* RNFBPreferences.m */; };
+		4817C02B247DB77E00704ED1 /* RNFBVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1F28422FCF6AD00F4DEC1 /* RNFBVersion.m */; };
+		4817C02C247DB77E00704ED1 /* RNFBUtilsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97BAD323042F2700077358 /* RNFBUtilsModule.m */; };
 		4D97BAD423042F2700077358 /* RNFBUtilsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97BAD323042F2700077358 /* RNFBUtilsModule.m */; };
 		DAA1F28522FCF6AD00F4DEC1 /* RNFBVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1F28422FCF6AD00F4DEC1 /* RNFBVersion.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +34,15 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4817C018247DB74D00704ED1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
@@ -49,6 +68,7 @@
 		2748D81B223674CD00FC8DC8 /* RNFBPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFBPreferences.m; sourceTree = "<group>"; };
 		2748D81E2237012B00FC8DC8 /* RNFBMeta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFBMeta.h; sourceTree = "<group>"; };
 		2748D81F2237018600FC8DC8 /* RNFBMeta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFBMeta.m; sourceTree = "<group>"; };
+		4817C01A247DB74D00704ED1 /* libRNFBApp-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNFBApp-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D97BAD223042F0800077358 /* RNFBUtilsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFBUtilsModule.h; sourceTree = "<group>"; };
 		4D97BAD323042F2700077358 /* RNFBUtilsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFBUtilsModule.m; sourceTree = "<group>"; };
 		DAA1F28422FCF6AD00F4DEC1 /* RNFBVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFBVersion.m; sourceTree = "<group>"; };
@@ -63,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4817C017247DB74D00704ED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2744B98221F45429004F8E3F /* libRNFBApp.a */,
+				4817C01A247DB74D00704ED1 /* libRNFBApp-tvos.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +157,23 @@
 			productReference = 2744B98221F45429004F8E3F /* libRNFBApp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		4817C019247DB74D00704ED1 /* RNFBApp-tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4817C022247DB74D00704ED1 /* Build configuration list for PBXNativeTarget "RNFBApp-tvos" */;
+			buildPhases = (
+				4817C016247DB74D00704ED1 /* Sources */,
+				4817C017247DB74D00704ED1 /* Frameworks */,
+				4817C018247DB74D00704ED1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNFBApp-tvos";
+			productName = "RNFBApp-tvos";
+			productReference = 4817C01A247DB74D00704ED1 /* libRNFBApp-tvos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +186,10 @@
 				TargetAttributes = {
 					2744B98121F45429004F8E3F = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					4817C019247DB74D00704ED1 = {
+						CreatedOnToolsVersion = 11.5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -159,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				2744B98121F45429004F8E3F /* RNFBApp */,
+				4817C019247DB74D00704ED1 /* RNFBApp-tvos */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +228,23 @@
 				2744B99121F46140004F8E3F /* RNFBRCTEventEmitter.m in Sources */,
 				2744B9A421F48A4F004F8E3F /* RCTConvert+FIROptions.m in Sources */,
 				2748D8152236426300FC8DC8 /* RNFBJSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4817C016247DB74D00704ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4817C026247DB77E00704ED1 /* RNFBMeta.m in Sources */,
+				4817C027247DB77E00704ED1 /* RCTConvert+FIRApp.m in Sources */,
+				4817C023247DB77E00704ED1 /* RNFBSharedUtils.m in Sources */,
+				4817C029247DB77E00704ED1 /* RNFBJSON.m in Sources */,
+				4817C02B247DB77E00704ED1 /* RNFBVersion.m in Sources */,
+				4817C02C247DB77E00704ED1 /* RNFBUtilsModule.m in Sources */,
+				4817C024247DB77E00704ED1 /* RNFBRCTEventEmitter.m in Sources */,
+				4817C025247DB77E00704ED1 /* RCTConvert+FIROptions.m in Sources */,
+				4817C02A247DB77E00704ED1 /* RNFBPreferences.m in Sources */,
+				4817C028247DB77E00704ED1 /* RNFBAppModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +445,78 @@
 			};
 			name = Debug;
 		};
+		4817C020247DB74D00704ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		4817C021247DB74D00704ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +534,15 @@
 			buildConfigurations = (
 				3323F7E33E1559A2B9826720 /* Debug */,
 				3323F77D701E1896E6D239CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4817C022247DB74D00704ED1 /* Build configuration list for PBXNativeTarget "RNFBApp-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4817C020247DB74D00704ED1 /* Debug */,
+				4817C021247DB74D00704ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
